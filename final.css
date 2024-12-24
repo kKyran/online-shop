@@ -1,0 +1,238 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #343a40;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffc107;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffc107;
+}
+
+.product {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Суреттің бастапқы стилі */
+.product img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Hover әсері */
+.product:hover img {
+  transform: scale(1.1); /* Суретті үлкейту */
+}
+
+.product .info {
+  padding: 10px;
+}
+
+.product button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #218838;
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #ffffff 50%, #f8f9fa 50%);
+  padding: 50px 15px;
+  border-bottom: 4px solid #343a40;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #212529;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #6f42c1;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #495057;
+  margin-bottom: 25px;
+}
+
+.hero button {
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #5a379d;
+}
+
+.hero img {
+  max-width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Section Headings */
+section h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 30px;
+}
+
+/* About Section */
+#about p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #495057;
+}
+
+/* Product Section */
+#product-list .card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+#product-list .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+  width: 300px; /* Суреттің ені */
+  height: auto; /* Биіктігін автоматты түрде орнатады */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Cart Section */
+#cartContent {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+/* FAQ Accordion */
+.accordion-button {
+  background-color: #ffffff;
+  color: #343a40;
+  font-weight: bold;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.accordion-body {
+  background-color: #ffffff;
+  color: #495057;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+.fade-in {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
